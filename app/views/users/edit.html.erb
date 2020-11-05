@@ -1,0 +1,38 @@
+<%# <form accept-charset="UTF-8" action="/users" method="post"> %>
+  <%# <label for="name">Name:</label> %>
+  <%# <input type="text" id="name" name="user[username]"><br><br> %>
+  <%# <label for="email">Email:</label> %>
+  <%# <input type="email" id="email" name="user[email]"><br><br> %>
+   <%# <label for="password">Password:</label> %>
+  <%# <input type="password" id="password" name="user[password]"><br><br> %>
+    <%# <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+  <%# <input type="submit" value="Submit"> %>
+<%# </form> %>
+<!-- <%= form_tag("/users", method: "post") do %>
+  <%= label_tag(:username, "Name:") %>
+  <%= text_field_tag(:username) %>
+  <%= label_tag(:email, "Email:") %>
+  <%= text_field_tag(:email) %>
+  <%= label_tag(:password, "Password:") %>
+  <%= text_field_tag(:password) %>
+  <%= submit_tag("Submit") %>
+<% end %> -->
+<%= form_for(@user, html: {multipart: true}) do |f| %>
+ 
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username,  placeholder: "What's your name" %>
+  </p>
+  
+  <p>
+   <%= f.label :email %><br />
+  <%= f.text_field :email,  placeholder: "youremail@example.com" %>
+</p>
+  <p>
+  <%= f.label :password %><br />
+  <%= f.password_field :password, placeholder: "Feed me your password"%>
+</p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

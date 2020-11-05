@@ -1,24 +1,54 @@
-# README
+# Reformer-App
+## Preface
+This is a basic rails project focusing on forms. In this project, we have created models, validations for the models and associations between the models,routes to forms,views for the forms.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with
+- Ruby v2.7.1
+- Rails 6
+- SQLITE3
 
-Things you may want to cover:
+## Features
+- Creating a user
+- Updating a user
 
-* Ruby version
 
-* System dependencies
+## Getting Started
+### Get a local copy
 
-* Configuration
+- Git clone git@github.com:sinework/re-former.git
+- Go to the local repo and run bundle install
+- Updaate your yarn if its out of date with yarn install --check-files
+### Get the database
+- Go to your terminal/command line interface
+- Go to your local copy of the repository
+- run rails db:create
+- run rails db:migrate
 
-* Database creation
+### How to start the console
+- Run rails console
 
-* Database initialization
+### how to start the server
+- Run rails server
 
-* How to run the test suite
+## Prerequisites 
+-Rails v6
+-Ruby v2.7.1
 
-* Services (job queues, cache servers, search engines, etc.)
+## Dependencies
+- rubocop 
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Sinework Amare Shiferaw**
+
+- Github: [@sinework](https://github.com/sinework)
+
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sinework-amare-731a6a125/)
+
+👤 **Marco Erhardt**
+
+Github: [LinkedIn](@marcode95)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
